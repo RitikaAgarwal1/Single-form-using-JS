@@ -1,0 +1,311 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Navigus</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+
+<!-- link for stylesheet -->
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+<!-- CDN for font icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<header class="header">
+		<img src="assets/images/logo.png">
+	</header>
+	
+	<h1>Are you finding it difficult to navigate your child's academic and professional future?</h1>
+	<p class="description">We spoke with many parents and students across the nation who were surrounded in a haze of confusion looking for career guidance to help them make the right academic and professional choices.</p>
+	<p class="description">HERE'S WHAT WE DISCOVERED</p>
+	
+	<section class="page-container">
+		<div>
+			<img src="assets/images/1.png" width="95%">
+			<div class="information">
+				<h3>
+					Passion vs Security
+				</h3>
+				<p>
+					My son wants to pursue his passion in Music but I worry if its a safe career choice. This has led to many countless heated arguments and I feel this has created a rift between us.
+				</p>
+				<button class="button" id="security-btn">Feel the same pain?</button>
+			</div>
+		</div>
+		
+		<div>
+			<img src="assets/images/2.png" width="95%"class="image2">
+			<div class="information">
+				<h3>
+					Unawareness of specialised courses
+				</h3>
+				<p>
+					My son wants to pursue his passion in Music but I worry if its a safe career choice. This has led to many countless heated arguments.
+				</p>
+				<button class="button" id="courses-btn">Feel the same pain?</button>
+			</div>
+		</div>
+		
+		<div>
+			<img src="assets/images/3.png" width="95%" class="image3">
+			<div class="information">
+				<h3>
+					Finding your last college fit
+				</h3>
+				<p>
+					My son wants to pursue his passion in Music but I worry if its a safe career choice. This has led to many countless heated arguments.
+				</p>
+				<button class="button" id="college-btn">Feel the same pain?</button>
+			</div>
+		</div>
+		
+		<div>
+			<img src="assets/images/4.png" width="69%" class="image4">
+			<div class="information">
+				<h3>
+					Uninformed about opportunities
+				</h3>
+				<p>
+					My son wants to pursue his passion in Music but I worry if its a safe career choice. This has led to many countless heated arguments.
+				</p>
+				<button class="button" id="opportunities-btn">Feel the same pain?</button>
+			</div>
+		</div>
+		
+		<div class="unique-container">
+			<div class="information">
+				<h2>
+					Different parents, unique problems
+				</h2>
+				<button class="button" id="why-btn">What's Yours?</button>
+			</div>
+			<p>Just like these parents, we would help you and your child uncover the depth of possibilities with the right fitting academic and professional path</p>
+		</div>
+		
+		<!-- popup -->
+		<div class="overlay">
+			<div class="popup">
+			
+				<!-- popup CTA buttons -->
+				<div class="security-popup">
+					<div class="close" onclick="closeDiv();">x</div>
+					<div class="image">
+					
+						<!-- left panel for security -->
+						<div class="security-image">
+							<img src="assets/images/1.png" width="70%">
+							<h5>Passion vs Security</h5>
+							<p><span>We helped</span> Mr XYZ and his son get on the same page by recommending academic &amp; professional paths which helped him retain his passion and find a secured and lucerative course that will help him excel!</p>
+							<p><span>Navigus</span> is currently creating an awareness on the problems faced by students and parents while making academic and career choices. We offer comprehensive solutions and guidance to students to craft their right-fit career path</p>
+						</div>
+					
+						<!-- left panel for courses -->
+						<div class="courses-image">
+							<img src="assets/images/2.png" width="50%">
+							<h5>Unawareness of specialised courses</h5>
+							<p><span>We helped</span> Mr XYZ and his son get on the same page by recommending specialised courses which helped him retain his passion.</p>
+							<p><span>Navigus</span> is currently creating an awareness on the problems faced by students and parents while making academic and career choices. We offer comprehensive solutions and guidance to students to craft their right-fit career path</p>
+						</div>
+						
+						<!-- left panel for finding your right college fit -->
+						<div class="college-image">
+							<img src="assets/images/3.png" width="50%">
+							<h5>Finding your right college fit</h5>
+							<p><span>We helped</span> Mr XYZ and his son get the right college by recommending specialised courses which helped him retain his passion.</p>
+							<p><span>Navigus</span> is currently creating an awareness on the problems faced by students and parents while making academic and career choices. We offer comprehensive solutions and guidance to students to craft their right-fit career path</p>
+						</div>
+						
+						<!-- left panel for uninformed about opportunities -->
+						<div class="opportunities-image">
+							<img src="assets/images/4.png" width="50%">
+							<h5>Uninformed about opportunities</h5>
+							<p><span>We helped</span> Mr XYZ and his son get on the same page by recommending academic.</p>
+							<p><span>Navigus</span> is currently creating an awareness on the problems faced by students and parents while making academic and career choices. We offer comprehensive solutions and guidance to students to craft their right-fit career path</p>
+						</div>
+						
+						<!-- left panel for why talk to us -->
+						<div class="why-image">
+							<img src="assets/images/callout.png" width="50%">
+							<h5>Why talk to us?</h5>
+							<p>Every problem needs a carefully crafted solution. At Navigus we are helping parents &amp; their children by providing guidance for their right-fitting academic and professional journey</p>
+						</div>
+					</div>
+				
+					<form class="popup-form">
+					
+						<!-- content for security -->
+						<div class="security-content">
+							<select id="security_subject">
+								<option disabled selected>What is your child currently studying?</option>
+								<option value="science">Science</option>
+								<option value="commerce">Commerce</option>
+								<option value="s_science">Social Science</option>
+							</select>
+							
+							<input type="text" id="security_school" placeholder="Which school does your child go to?">
+							
+							<input type="text" id="security_ambition" placeholder="What does YOUR child want to be?">
+							
+							<input type="text" id="security_pursue" placeholder="What do you want your child to pursue?">
+							
+							<input type="text" id="security_fullname" placeholder="Your full name">
+							
+							<input type="text" id="security_city" placeholder="City">
+							
+							<div class="radiobtn">
+								<label>
+									How would you like us to contact you?<br>
+								</label>
+								<label>
+									<input type="radio" name="radio1" value="Mobile">Mobile
+								</label>
+								<label>
+									<input type="radio" name="radio1" value="Email">Email
+								</label>
+							</div>
+						</div>
+						
+						<!-- content for couses -->
+						<div class="courses-content">
+							<select>
+								<option disabled selected>How do you want the course to be?</option>
+								<option>Online Course</option>
+								<option>Classroom COurse</option>
+							</select>
+							
+							<input type="text" placeholder="What does YOUR child want to be?">
+							
+							<input type="text" placeholder="What do you want your child to pursue?">
+							
+							<input type="text" placeholder="Your full name">
+							
+							<input type="text" placeholder="City">
+							
+							<div class="radiobtn">
+								<label>
+									How would you like us to contact you?<br>
+								</label>
+								<label>
+									<input type="radio" name="radio1" value="Mobile">Mobile
+								</label>
+								<label>
+									<input type="radio" name="radio1" value="Email">Email
+								</label>
+							</div>
+						</div>
+						
+						<!-- content for finding your right college fit -->
+						<div class="college-content">
+							<select>
+								<option disabled selected>What is your child currently studying?</option>
+								<option>Science</option>
+								<option>Commerce</option>
+								<option>Social Science</option>
+							</select>
+							
+							<input type="text" placeholder="What does YOUR child want to be?">
+							
+							<input type="text" placeholder="What do you want your child to pursue?">
+							
+							<input type="text" placeholder="Your full name">
+							
+							<input type="text" placeholder="City">
+							
+							<div class="radiobtn">
+								<label>
+									How would you like us to contact you?<br>
+								</label>
+								<label>
+									<input type="radio" name="radio1" value="Mobile">Mobile
+								</label>
+								<label>
+									<input type="radio" name="radio1" value="Email">Email
+								</label>
+							</div>
+						</div>
+						
+						<!-- content for uninformed about opportunities -->
+						<div class="opportunities-content">
+							<select>
+								<option disabled selected>What is your child currently studying?</option>
+								<option>Science</option>
+								<option>Commerce</option>
+								<option>Social Science</option>
+							</select>
+							
+							<input type="text" placeholder="What opportunities are you looking for?">
+							
+							<input type="text" placeholder="What do you want your child to pursue?">
+							
+							<input type="text" placeholder="Your full name">
+							
+							<input type="text" placeholder="City">
+							
+							<div class="radiobtn">
+								<label>
+									How would you like us to contact you?<br>
+								</label>
+								<label>
+									<input type="radio" name="radio1" value="Mobile">Mobile
+								</label>
+								<label>
+									<input type="radio" name="radio1" value="Email">Email
+								</label>
+							</div>
+						</div>
+						
+						<!-- content for why talk -->
+						<div class="why-content">
+							<select>
+								<option disabled selected>Relationship</option>
+								<option>Father</option>
+								<option>Mother</option>
+								<option>Sister</option>
+								<option>Brother</option>
+							</select>
+							
+							<input type="text" placeholder="Your name">
+							
+							<input type="text" placeholder="Your city">
+							
+							<select>
+								<option disabled selected>Your ward is currently studying in?</option>
+								<option>School</option>
+								<option>High-School</option>
+								<option>Not Studying</option>
+							</select>
+							
+							<input type="text" placeholder="His/Her School?">
+							
+							<textarea rows="2" placeholder="Share your problem with us, we would love to help you"></textarea>
+							
+							<div class="radiobtn">
+								<label>
+									How would you like us to contact you?<br>
+								</label>
+								<label>
+									<input type="radio" name="radio1" value="Mobile">Mobile
+								</label>
+								<label>
+									<input type="radio" name="radio1" value="Email">Email
+								</label>
+							</div>
+						</div>
+						<input type="button" value="Submit" class="button" onclick="send();">
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	
+	<footer class="page-footer">
+		<p>Contact Navigus</p>
+		<p>Contact Navigus</p>
+	</footer>
+	
+	<script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+</html>
