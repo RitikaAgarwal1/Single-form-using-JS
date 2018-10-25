@@ -1,0 +1,418 @@
+body{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: #fff;
+	margin: 0;
+	background:#1b263d;
+	padding:15px;
+}
+
+p, h1, h2, h3, h4, h5, h6{
+	margin:0;
+}
+
+h1{
+	text-transform: uppercase;
+    color: #ff5b5b;
+	margin-top: 20px;
+}
+
+.description{
+	margin-top: 15px;
+    text-align: center;
+}
+
+/* section */
+
+.page-container{
+	margin-top: 30px;
+	display:grid;
+}
+
+.page-container img{
+	display: block;
+    margin: auto;
+	margin-top: 30px;
+}
+
+.information{
+	background: rgba(91, 84, 92);
+    height: 125px;
+    color: #fff;
+    padding: 30px 15px;
+	margin-top: -4px;
+}
+
+.information h3{
+	text-transform: uppercase;
+	height: 28%;
+}
+
+.information p{
+	margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.4;
+	height: 53%;
+}
+
+.button{
+	text-transform: uppercase;
+    display: block;
+    margin: auto;
+    height: 40px;
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    background: #ff5b5b;
+	cursor:pointer;
+}
+
+.image2, .image3{
+	position: relative;
+    bottom: -25px;
+}
+
+.image4{
+	position: relative;
+    bottom: -10px;
+}
+
+.unique-container{
+	margin-top: 18%;
+}
+
+.unique-container h2{
+	text-transform: uppercase;
+    position: relative;
+    top: -11px;
+}
+
+.unique-container .information{
+	height: 52px;
+	padding: 0 15px 30px 15px;
+}
+
+.unique-container button, .popup .button{
+	margin-top: 0;
+    background: #c1a40e;
+}
+
+.unique-container p{
+	margin-top: 20px;
+    font-size: 14px;
+    padding: 15px;
+    line-height: 1.4;
+}
+
+/* popup */
+
+.overlay{
+	background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.popup{
+	background: #eee;
+    position: fixed;
+    width: 300px;
+    left: 50%;
+    top: 50%;
+	border-radius: 4px;
+    transform: translate(-50%, -50%);
+	background: #ff5b5b;
+}
+
+.popup, .overlay, .security-image, .courses-image, .college-image, .opportunities-image, .why-image, .security-content, .courses-content, .college-content, .opportunities-content, .why-content{
+	display:none;
+}
+
+.popup .image{
+	padding: 0 20px;
+}
+
+.popup img{
+	margin-top: 0;
+}
+
+.popup p{
+	font-size: 12px;
+    margin: 10px 0;
+}
+
+.popup p span{
+	color:#333;
+}
+
+.popup h5{
+	text-transform: uppercase;
+    color: #333;
+	margin-top: 10px;
+}
+
+.why-image h5{
+	color:#fff;
+}
+
+/* Popup Form */
+
+.popup form{
+	background: #fff;
+    color: #8c8c8c;
+    padding-bottom: 10px;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.popup form ::placeholder{
+	color: #8c8c8c;
+}
+
+.popup form select{
+	height: 25px;
+    margin: 10px 20px 5px 20px;
+	width: 87%;
+	border-radius: 2px;
+	border: 1px solid #ddd;
+    background: #eee;
+	color: #8c8c8c;
+}
+
+.popup form input[type="text"]{
+	height: 20px;
+    margin: 5px 20px;
+	width:85%;
+	border-radius: 2px;
+	border: 1px solid #ddd;
+    background: #eee;
+	padding-left: 4px;
+}
+
+.popup textarea{
+	width: 85%;
+    margin: 5px 20px;
+	border-radius: 2px;
+	border: 1px solid #ddd;
+    background: #eee;
+	padding-left: 4px;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.radiobtn{
+	padding: 5px 20px;
+    font-size: 14px;
+}
+
+.popup .button{
+	width: 90%;
+    height: 35px;
+}
+
+.close{
+	text-align: right;
+    padding: 5px 10px 0 0;
+    cursor: pointer;
+}
+
+/* footer */
+
+.page-footer{
+	display:flex;
+}
+
+.page-footer p{
+	flex:1;
+	text-align:center;
+	font-size: 14px;
+}
+
+
+/* media query for responsive page */
+
+/*code for responsive---tablet*/
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+	  .page-container{
+		display: grid;
+		grid-template-columns: 42% 42%;
+		grid-template-rows: 45vh 53vh auto auto;
+		grid-column-gap: 3em;
+		justify-content: center;
+	  }
+	  
+	  .page-container .image2{
+		width: 70%;
+		right: -47px;
+		margin-top: -21px;
+	  }
+	  
+	  .page-footer p:first-child{
+		flex: 2;
+		text-align: right;
+		}
+		
+		.image, .popup-form{
+			flex: 1;
+			padding: 10px;
+		}
+		
+		.popup{
+			width: 90%;
+		}
+		
+		.security-popup{
+			display: flex;
+		}
+	  
+	  .close{
+		order: 3;
+		background: #fff;
+		margin-top: 0;
+		color: #333;
+		border-top-right-radius: 4px;
+		border-bottom-right-radius: 4px;
+	  }
+	  
+	  .popup-form{
+		  margin-right: -2px;
+	  }
+	  
+	  .popup form select, .popup form input[type="text"]{
+		font-size: 15px;
+		height: 35px;
+	  }
+	  
+	  .radiobtn{
+		  font-size: 20px;
+	  }
+	  
+	  .popup .button {
+		height: 44px;
+		font-size: 16px;
+	}
+		  
+	  .popup .image {
+		padding: 60px 30px;
+	}
+  }
+
+  /* code for laptop */
+
+@media only screen and (min-width: 1140px){ 
+
+	.page-container{
+		display:grid;
+		grid-template-columns: 30% 30%;
+		grid-template-rows: 75vh 93vh auto auto;
+		grid-column-gap:3em;
+		justify-content: center;
+	}
+
+	h1{
+		font-size: 45px;
+		padding: 9% 30px 10px 30px;
+	}
+
+	.description{
+		padding: 0 35px;
+		font-size: 22px;
+	}
+
+	.description:nth-of-type(2){
+		margin-top: 12%;
+		font-size: 18px;
+		font-weight: lighter;
+		font-stretch: semi-condensed;
+	}
+
+	.information{
+		height:150px;
+	}
+	
+	.information p{
+		height: 25%;
+	}
+
+	.button{
+		margin-top: 60px;
+	}
+
+	.page-container .image2{
+		width:64.5%;
+		bottom: -8px;
+		margin-bottom: -37px;
+		right:-63px;
+		margin-top: 17px;
+	}
+
+	.page-container .image3{
+		width: 93.5%;
+	}
+
+	.page-footer p:first-child{
+		flex: 2;
+		text-align: right;
+	}
+	
+	.security-popup{
+		display: flex;
+	}
+	
+	.popup{
+		width: 70%;
+	}
+	
+	.image, .popup-form{
+		flex: 1;
+		padding: 10px;
+	}
+	
+	.close{
+		order: 3;
+		background: #fff;
+		margin-right: -2px;
+		margin-top: 0;
+		color: #333;
+		border-top-right-radius: 4px;
+		border-bottom-right-radius: 4px;
+		font-size: 23px;
+	  }
+	  
+	  .popup h5{
+		font-size: 29px;
+		margin-top: 30px;
+	  }
+	  .popup p{
+		font-size: 18px;
+	  }
+	  
+	  .popup-form{
+		  margin-right: -2px;
+		  padding: 50px 0 50px 30px;
+	  }
+	  
+	  .popup form select, .popup form input[type="text"]{
+		font-size: 18px;
+		height: 40px;
+	  }
+	  
+	  .radiobtn, .popup textarea{
+		  font-size: 18px;
+	  }
+	  
+	  .popup .button{
+		height: 53px;
+		font-size: 20px;
+	  }
+	  
+	  .popup .image {
+		padding: 60px 30px;
+	}
+}
